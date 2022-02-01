@@ -79,3 +79,6 @@ yarn add firebase@8.8.1
 
 ### Usando Toastify para os aletras ###
 yarn add react-toastify
+
+### React Icons ####
+yarn add react-icons
