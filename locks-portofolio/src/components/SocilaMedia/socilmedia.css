@@ -1,0 +1,11 @@
+a.socialMediaIcon{
+    color: #181c2e;
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+}
+
+a.socialMediaIcon svg{
+    font-size: 1.3em;
+}

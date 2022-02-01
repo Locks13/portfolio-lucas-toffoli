@@ -1,0 +1,24 @@
+.primary{
+    background-color:#181c2e;
+    color: #fff;
+    font-weight: 600;
+    border:0 none;
+    padding:5px;
+    max-width:200px;
+    font-size: 1.2em;
+    margin:10px 0;
+    border-radius:10px;
+    width:100%;
+    display:block;
+}
+
+.secondary{
+    background-color: red;
+    padding:5px;
+    max-width:200px;
+    font-size: 1.2em;
+    margin:10px 0;
+    border-radius:10px;
+    width:100%;
+    display:block;
+}
