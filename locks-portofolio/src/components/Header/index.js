@@ -22,7 +22,7 @@ const HeaderItens = styled.div`
 `
 
 function Header() {
-    const { signed } = useContext(AuthContext);
+    const { signed, user } = useContext(AuthContext);
 
     return (    
       <HeaderContainer>
@@ -32,10 +32,10 @@ function Header() {
             </div>
             <ul>
                 <li>
-                    <Button link={'/'} text={'About me'} color={'primary'} />
+                    <Button link={'/'} text={'Sobre Lucas'} color={'primary'} />
                 </li>
                 <li>
-                    <Button link={signed ? '/user' : '/signin'} text={signed ? 'Usuario' : 'Entrar'} color={'primary'} />
+                    <Button link={signed ? '/user' : '/signin'} text={signed ? `${user.nome}` : 'Entrar'} color={'primary'} />
                 </li>
             </ul>
         </HeaderItens>          

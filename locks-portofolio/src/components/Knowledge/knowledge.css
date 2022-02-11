@@ -1,0 +1,15 @@
+.knowledge{
+    margin: 2vh 0;
+}
+
+.knowledge span{
+    display: inline-block;
+}
+.knowledge .svgText{
+    font-size: 3em;
+}
+.knowledge p{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 600;
+}

@@ -42,6 +42,10 @@ function AuthProvider({ children }){
       let data = {
         uid: uid,
         nome: userProfile.data().nome,
+        sobrenome: userProfile.data().sobrenome,
+        cargo: userProfile.data().cargo,
+        depoimentoBr: userProfile.data().depoimentoBr,
+        depoimentoEn: userProfile.data().depoimentoEn,
         avatarUrl: userProfile.data().avatarUrl,
         email: value.user.email
       };
@@ -50,7 +54,9 @@ function AuthProvider({ children }){
       storageUser(data);
       setLoadingAuth(false);
       toast.success('Bem vindo de volta!');
-
+      setTimeout(function() {
+        window.location.href = "/user";
+      }, 1500);      
 
     })
     .catch((error)=>{
@@ -90,6 +96,9 @@ function AuthProvider({ children }){
         storageUser(data);
         setLoadingAuth(false);
         toast.success('Bem vindo a plataforma!');
+        setTimeout(function() {
+          window.location.href = "/user";
+        }, 1500);
 
       })
 
@@ -121,7 +130,9 @@ function AuthProvider({ children }){
       signUp,
       signOut,
       signIn,
-      loadingAuth
+      loadingAuth,
+      setUser,
+      storageUser
     }}
     >
       {children}

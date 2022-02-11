@@ -8,11 +8,11 @@ import AboutMe from "../pages/AboutMe";
 export default function Routes(){
     return(
         <Switch>
-            <Route exact path="/" component={AboutMe} />
+            <Route exact path="/lucas-toffoli" component={AboutMe} />
             <Route exact path="/signin" component={SignIn} />
             <Route exact path="/signup" component={SignUp} />
-
             <Route exact path="/user" component={User} isPrivate />
+            <Route path="*" component={AboutMe} />
         </Switch>
     )
 }

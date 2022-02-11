@@ -1,7 +1,6 @@
 import Header from "../../components/Header";
 import { useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
-
 import { AuthContext } from '../../contexts/auth';
 import './signin.css';
 
@@ -18,8 +17,8 @@ function SignIn() {
       signIn(email, password)
     }
 
-
   }
+
 
     return (    
       <>

@@ -1,3 +1,8 @@
+.socialMedia{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
 a.socialMediaIcon{
     color: #181c2e;
     margin-top: 10px;

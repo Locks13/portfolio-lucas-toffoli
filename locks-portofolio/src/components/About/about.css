@@ -1,0 +1,14 @@
+.aboutme{
+    margin: 2vh 0;
+}
+.aboutme h1{
+    font-size: 2em;
+    font-weight: 900;
+    margin: 10px 0;
+}
+.aboutme p{
+    font-size: 1em;
+    line-height: 130%;
+    margin: 10px 0;
+    text-align: justify;
+}
