@@ -1,0 +1,17 @@
+.contact{
+    margin: 2vh 0;
+}
+.contact div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.contact img,
+.contact span{
+    margin: 2vh 10px;
+}
+.contact img{
+    max-width: 100px;
+    border-radius: 100px;
+    border:solid 3px #000;
+}

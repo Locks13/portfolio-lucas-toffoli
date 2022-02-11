@@ -1,0 +1,114 @@
+.wrapper{
+    max-width:900px;
+    margin:0 auto;
+    padding:20px;
+    display:flex;
+    flex-direction:column;
+}
+.logout{
+    display: flex;
+    flex-direction: row;
+}
+
+.logout button{
+    border: 0;
+    border-radius: 7px;
+    background-color: #181c2e;
+    color: #FFF;
+    font-size: 1.3em;
+    padding: 5px 10px;
+    margin-left: 5%;
+    opacity: 0.8;
+}
+.holder-user-infos{
+    display: flex;
+    flex-direction: row;
+}
+.holder-inputs{
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+    margin: 20px 0 0;
+}
+.input-form{
+    display: inline-block;
+    max-width: 50%;
+    vertical-align: middle;
+    margin: 10px 0;
+}
+.label-avatar,
+.label-depoimento{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+    margin: 2vh 0;
+}
+.label-depoimento{
+}
+.label-avatar label,
+.label-depoimento label{
+    font-size: 1em;
+    margin: 15px 0 5px;
+    font-weight: bold;
+}
+.label-avatar input,
+.label-depoimento input{
+    width: 100%;
+    max-width: 90%;
+    padding: 10px;
+    font-size: 1em;
+}
+.label-depoimento textarea{
+    width: 100%;
+    max-width: 90%;
+    padding: 10px;
+    font-size: 1em;
+    min-height: 150px;
+    resize: none;
+}
+.label-avatar input:disabled{
+    cursor: not-allowed;
+}
+.label-avatar button,
+.label-depoimento button{
+    width: 100%;
+    max-width: 200px;
+    margin: 20px auto;
+    height: 35px;
+    border: 0;
+    border-radius: 7px;
+    background-color: #181c2e;
+    color: #FFF;
+    font-size: 1.3em;
+}
+.user-avatar{
+    position: relative;
+    max-width: 200px;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.user-avatar input{
+    display: none;
+}
+.user-avatar img{
+    max-width: 200px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 100px;
+}
+.user-avatar svg{
+    color: #fff;
+    position: absolute;
+    top:50%;
+    left:46%;
+    transition:.5s;
+}
+.user-avatar:hover svg{
+    transform: scale(2);
+}
+input [text]{
+    max-width: 100%;
+    width: 100%;
+}
