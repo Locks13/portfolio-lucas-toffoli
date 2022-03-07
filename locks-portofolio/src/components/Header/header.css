@@ -8,6 +8,11 @@ li{
     margin: 0 10px;
 }
 
+.icon-header{
+    background-color: transparent;
+    font-size: 1em;
+}
+
 .lucas-image img{
     max-width: 120px;
     border-radius: 100px;

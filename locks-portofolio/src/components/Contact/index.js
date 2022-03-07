@@ -6,7 +6,7 @@ import './contact.css';
 function Contact() {
 
     return (    
-      <>
+      <div className="holder-contact">
         <div className="contact">
             <h1>Contato</h1>
             <div>
@@ -31,7 +31,7 @@ function Contact() {
 
             </div>
           </div>        
-      </>
+      </div>
     )
   }
 export default Contact;

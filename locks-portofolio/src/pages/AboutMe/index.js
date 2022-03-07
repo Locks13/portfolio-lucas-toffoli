@@ -9,9 +9,7 @@ import Contact from "../../components/Contact";
 function AboutMe() {
 
     const Wrapper = styled.div`
-        max-width:900px;
         margin:0 auto;
-        padding:20px;
         display:flex;
         flex-direction:column;
     `
@@ -25,9 +23,9 @@ function AboutMe() {
 
           <Knowledge />
 
-          <Depoiments />
-
           <Contact />
+
+          <Depoiments />
 
         </Wrapper>
         

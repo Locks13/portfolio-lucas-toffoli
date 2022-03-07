@@ -5,7 +5,7 @@ import './about.css';
 
 function About() {
     return (    
-      <>
+      <div className="holder-about">
         <div className="aboutme">
             <h1>Sobre mim</h1>
             <p>
@@ -31,7 +31,7 @@ function About() {
                 <GitHubIcon />
             </div>
         </div>
-      </>
+      </div>
     )
   }
 export default About;

@@ -1,9 +1,18 @@
-.knowledge{
-    margin: 2vh 0;
+.holder-knowledge{
+    background-color: rgb(224, 224, 224);
+    padding: 2vh 0;    
 }
-
+.knowledge{
+    max-width: 900px;
+    margin: 2vh auto;
+    padding:0 20px;
+}
 .knowledge span{
     display: inline-block;
+}
+.knowledge span svg{
+    display: block;
+    margin: 0 auto;
 }
 .knowledge .svgText{
     font-size: 3em;
@@ -12,4 +21,18 @@
     text-align: center;
     font-size: 1.5em;
     font-weight: 600;
+    min-height: 51px;
+}
+svg.icon{
+    font-size: 50px;
+    margin: 1vh auto;
+    display: block;
+}
+@media(max-width:980px){
+    .knowledge .slick-next{
+        right: 15px;
+    }
+    .knowledge .slick-prev {
+        left: 15px;
+    }
 }

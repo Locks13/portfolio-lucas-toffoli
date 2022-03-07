@@ -25,7 +25,9 @@
     flex-direction: row;
 }
 .holder-inputs{
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     vertical-align: middle;
     max-width: 100%;
     margin: 20px 0 0;
@@ -36,32 +38,27 @@
     vertical-align: middle;
     margin: 10px 0;
 }
-.label-avatar,
-.label-depoimento{
+.label-avatar{
     display: flex;
     flex-direction: column;
     justify-content: center;
     max-width: 100%;
     margin: 2vh 0;
 }
-.label-depoimento{
-}
-.label-avatar label,
-.label-depoimento label{
-    font-size: 1em;
+.label-avatar label{
+    font-size: 1.2em;
     margin: 15px 0 5px;
     font-weight: bold;
+    display: inline-block;
 }
-.label-avatar input,
-.label-depoimento input{
+.label-avatar input{
     width: 100%;
     max-width: 90%;
     padding: 10px;
     font-size: 1em;
 }
-.label-depoimento textarea{
+.label-avatar textarea{
     width: 100%;
-    max-width: 90%;
     padding: 10px;
     font-size: 1em;
     min-height: 150px;
@@ -70,8 +67,7 @@
 .label-avatar input:disabled{
     cursor: not-allowed;
 }
-.label-avatar button,
-.label-depoimento button{
+.label-avatar button{
     width: 100%;
     max-width: 200px;
     margin: 20px auto;
