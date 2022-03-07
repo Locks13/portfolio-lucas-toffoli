@@ -54,10 +54,6 @@ function AuthProvider({ children }){
       storageUser(data);
       setLoadingAuth(false);
       toast.success('Bem vindo de volta!');
-      setTimeout(function() {
-        window.location.href = "/user";
-      }, 1500);      
-
     })
     .catch((error)=>{
       console.log(error);
@@ -97,7 +93,7 @@ function AuthProvider({ children }){
         setLoadingAuth(false);
         toast.success('Bem vindo a plataforma!');
         setTimeout(function() {
-          window.location.href = "/user";
+          window.location.href = "./user";
         }, 1500);
 
       })
@@ -139,5 +135,7 @@ function AuthProvider({ children }){
     </AuthContext.Provider>
   )
 }
+
+
 
 export default AuthProvider;

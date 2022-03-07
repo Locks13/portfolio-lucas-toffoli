@@ -3,13 +3,27 @@
     color: #fff;
     font-weight: 600;
     border:0 none;
-    padding:5px;
+    padding:5px 10px;
     max-width:200px;
     font-size: 1.2em;
     margin:10px 0;
-    border-radius:10px;
+    border-radius:5px;
     width:100%;
     display:block;
+}
+
+.primary-icon{
+    background-color:#181c2e;
+    color: #fff;
+    font-weight: 600;
+    border:0 none;
+    padding:7px 10px;
+    max-width:200px;
+    font-size: 1.2em;
+    margin:10px 0;
+    border-radius:5px;
+    width:100%;
+    display:flex;
 }
 
 .secondary{

@@ -1,5 +1,9 @@
+.holder-contact{
+}
 .contact{
-    margin: 2vh 0;
+    margin: 2vh auto;
+    max-width: 900px;
+    padding: 0 20px;
 }
 .contact div{
     display: flex;

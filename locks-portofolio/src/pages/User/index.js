@@ -9,7 +9,7 @@ import './user.css'
 import { toast } from 'react-toastify';
 
 function User() {
-  const { signOut, user, setUser, storageUser } = useContext(AuthContext);
+  const { user, setUser, storageUser } = useContext(AuthContext);
 
   const [nome, setNome] = useState(user && user.nome);
   const [sobrenome, setSobrenome] = useState(user && user.sobrenome);
@@ -28,26 +28,33 @@ function User() {
       .update({
         nome: nome,
         sobrenome: sobrenome,
-        cargo: cargo,
       })
       .then(() => {
         let data = {
           ...user,
           nome: nome,
           sobrenome: sobrenome,
+        };
+        setUser(data);
+        storageUser(data);
+        toast.success('Salvo com sucesso');
+      })
+    }
+    if(cargo !== ''){
+      await firebase.firestore().collection('users')
+      .doc(user.uid)
+      .update({
+        cargo: cargo,
+      })
+      .then(() => {
+        let data = {
+          ...user,
           cargo: cargo,
         };
         setUser(data);
         storageUser(data);
-        toast.success('Salvo com sucesso'); 
       })
-    }else if(nome !=='' && sobrenome !== '' && imageAvatar !== null){
-      handleUplaod();
     }
-  }
-
-  async function handleDepoimento(e){
-    e.preventDefault()
     if(depoimentoBr !== ''){
       await firebase.firestore().collection('users')
       .doc(user.uid)
@@ -61,7 +68,6 @@ function User() {
         };
         setUser(data);
         storageUser(data);
-        toast.success('Depoimento em português salvo com sucesso'); 
       })
     }
     if(depoimentoEn !== ''){
@@ -77,11 +83,12 @@ function User() {
         };
         setUser(data);
         storageUser(data);
-        toast.success('Testimonial saved successfully'); 
       })
     }
+    if(nome !=='' && sobrenome !== '' && imageAvatar !== null){
+      handleUplaod();
+    }
   }
-
   async function handleUplaod(){
       const currentUid = user.uid;
       const uploadTask = await firebase.storage()
@@ -99,15 +106,11 @@ function User() {
           .doc(user.uid)
           .update({
             avatarUrl:urlFoto,
-            nome: nome,
-            sobrenome: sobrenome
           })
           .then(()=>{
             let data = {
               ...user,
               avatarUrl:urlFoto,
-              nome:nome,
-              sobrenome: sobrenome
             };
             setUser(data);
             storageUser(data);
@@ -138,7 +141,6 @@ function User() {
 
         <div className='logout'>
           <h1>Bem vindo {user.nome}</h1>
-          <button onClick={ () => signOut() }>Fazer logout</button>
         </div>
 
         <div className='holder-user-infos'>
@@ -183,17 +185,8 @@ function User() {
                   <input type='email' value={email} disabled />
                 </div>
                 
-              </div>              
-
-              <button type="submit">Salvar</button>
-
-            </label>
-          </form>
-
-          <form className="depoimento" onSubmit={handleDepoimento}>
-
-            <label className="label-depoimento">
-
+              </div>
+              
               <h2 className="user-depoimento">
                 Depoimentos
               </h2>
@@ -208,11 +201,12 @@ function User() {
               </label>
               <textarea type='text' value={depoimentoEn} onChange={ (e) => setDepoimentoEn(e.target.value) } />
 
+
               <button type="submit">Salvar</button>
 
             </label>
-
           </form>
+
         </div>
       </div>
         

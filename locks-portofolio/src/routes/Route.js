@@ -6,7 +6,7 @@ export default function RouteWrapper({
     component: Component,
     isPrivate,
     ...rest
-}){
+    }){
     const { signed, loading } = useContext(AuthContext);
 
     if(loading){
@@ -16,9 +16,8 @@ export default function RouteWrapper({
     }
 
     if(!signed && isPrivate){
-        return <Redirect to="/" />
+        return <Redirect to="/lucas-toffoli" />
     }
-
     return(
         <Route
             {...rest}

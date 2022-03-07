@@ -35,7 +35,7 @@ function SignUp() {
             <button type="submit">{loadingAuth ? 'Carregando...' : 'Cadastrar'}</button>
           </form>  
 
-          <Link to="/signin">Já tem uma conta? Entre</Link>
+          <Link to="./signin">Já tem uma conta? Entre</Link>
         </div>
       </div>
     </>
