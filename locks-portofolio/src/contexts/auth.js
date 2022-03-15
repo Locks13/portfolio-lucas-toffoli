@@ -92,10 +92,6 @@ function AuthProvider({ children }){
         storageUser(data);
         setLoadingAuth(false);
         toast.success('Bem vindo a plataforma!');
-        setTimeout(function() {
-          window.location.href = "./user";
-        }, 1500);
-
       })
 
     })

@@ -37,7 +37,11 @@
 .referral img{
     max-width: 100px;
     border-radius: 100px;
-    border:solid 3px #000;
+    border: solid 3px #000;
+    object-fit: cover;
+    max-height: 110px;
+    width: 100px;
+    height: 100px;
 }
 .depoiment{
     margin: 20px 0;

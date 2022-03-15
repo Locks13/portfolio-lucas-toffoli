@@ -70,7 +70,7 @@ function User() {
         storageUser(data);
       })
     }
-    if(depoimentoEn !== ''){
+    /* if(depoimentoEn !== ''){
       await firebase.firestore().collection('users')
       .doc(user.uid)
       .update({
@@ -84,7 +84,7 @@ function User() {
         setUser(data);
         storageUser(data);
       })
-    }
+    } */
     if(nome !=='' && sobrenome !== '' && imageAvatar !== null){
       handleUplaod();
     }
@@ -196,10 +196,10 @@ function User() {
               </label>
               <textarea type='text' value={depoimentoBr} onChange={ (e) => setDepoimentoBr(e.target.value) } />
                             
-              <label>
+              {/* <label>
                 Testimonial in English
               </label>
-              <textarea type='text' value={depoimentoEn} onChange={ (e) => setDepoimentoEn(e.target.value) } />
+              <textarea type='text' value={depoimentoEn} onChange={ (e) => setDepoimentoEn(e.target.value) } /> */}
 
 
               <button type="submit">Salvar</button>

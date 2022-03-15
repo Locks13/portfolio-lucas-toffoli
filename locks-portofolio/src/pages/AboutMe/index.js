@@ -4,6 +4,7 @@ import About from "../../components/About";
 import Knowledge from "../../components/Knowledge"
 import Depoiments from "../../components/Depoiments";
 import Contact from "../../components/Contact";
+import '../../translate/i18n';
 
 
 function AboutMe() {

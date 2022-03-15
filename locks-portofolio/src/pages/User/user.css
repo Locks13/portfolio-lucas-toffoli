@@ -108,3 +108,11 @@ input [text]{
     max-width: 100%;
     width: 100%;
 }
+@media (max-width:768px) {
+    .holder-inputs{
+        display: block;
+    }
+    form{
+        width: 100%;
+    }
+}

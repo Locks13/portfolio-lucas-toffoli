@@ -36,7 +36,6 @@
     width:100%;
     display:block;
 }
-
 @media (max-width:768px) {
     .primary{
         max-width:140px;
