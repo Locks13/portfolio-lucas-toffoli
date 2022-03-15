@@ -72,8 +72,8 @@ function Depoiments() {
   };
   return (
     <div className="holder-referral">
-      <div className="referral">
-        <h1>Referência</h1>
+      <div className="referral" id="depoimentos" >
+        <h1>Depoimentos</h1>
         {userDepoimento.length === 0 ? (
           <div className="spinner-border" role="status">
             <span className="sr-only">Loading...</span>

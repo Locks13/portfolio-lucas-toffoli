@@ -1,16 +1,14 @@
 import styled from "styled-components";
-import Imagem from "../../assets/eu.jpeg"
+import Imagem from "../../assets/eu.png"
 import BgHeader from "../../assets/bg-header.png"
-import Button from "../Button";
 import './header.css'
-import { useContext } from 'react';
-import { AuthContext } from '../../contexts/auth';
-import { Link } from "react-router-dom";
-import { MdLogin, MdLogout } from 'react-icons/md';
+import Burger from "./Burger";
+
 
 const HeaderContainer = styled.div`
     display:flex;
     background-image: url(${BgHeader});
+    background-repeat: no-repeat;
     @media(max-width:968px){
         background:linear-gradient(to right, #181c2e, #555974);
     }
@@ -25,10 +23,13 @@ const HeaderItens = styled.div`
     width:100%;
     justify-content: space-between;
     align-items:center;
+    @media(max-width:768px){
+        display:block;
+        postion:relative;
+    }
 `
 
 function Header() {
-    const { signed, user, signOut } = useContext(AuthContext);
 
     return (    
       <HeaderContainer>
@@ -36,34 +37,7 @@ function Header() {
             <div className="lucas-image">
                 <img src={Imagem} alt="Lucas Toffoli" />
             </div>
-            <ul>
-                <li>
-                    <Button link={'/lucas-toffoli/cv'} text={'CV'} color={'primary'} />
-                </li>
-                <li>
-                    <Button link={'/lucas-toffoli'} text={'Referência'} color={'primary'} />
-                </li>
-                {!signed ? (
-                    <li className="hidden">
-                        <div ></div>
-                    </li>
-                ) : (
-                    <li>
-                        <Button link={'/lucas-toffoli/user'} text={user.nome} color={'primary'} />
-                    </li>
-                )}
-                <li>
-                    {!signed ? (
-                        <Link className="primary-icon" to="/lucas-toffoli/signin">
-                            <MdLogin className="icon-header signin" />
-                        </Link> 
-                    ) : (
-                        <button className="primary-icon" onClick={ () => signOut() }>
-                            <MdLogout className="icon-header signout" />
-                        </button>
-                    )}
-                </li>
-            </ul>
+            <Burger />
         </HeaderItens>          
       </HeaderContainer>
     )

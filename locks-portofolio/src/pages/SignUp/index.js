@@ -1,5 +1,5 @@
 import { useState, useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import { AuthContext } from '../../contexts/auth';
 import Header from '../../components/Header';
 
@@ -10,16 +10,18 @@ function SignUp() {
   const [password, setPassword] = useState('');
 
   const { signUp, loadingAuth } = useContext(AuthContext);
+  let history = useHistory();
 
-  function handleSubmit(e){
+  async function handleSubmit(e){
     e.preventDefault();
     
     if(nome !== '' && sobrenome !== '' && email !== '' && password !== ''){
-      signUp(email, password, nome, sobrenome);
+      await signUp(email, password, nome, sobrenome);
+      history.push("./user");
     }
 
   }
-
+  
   return (
     <>
       <Header />

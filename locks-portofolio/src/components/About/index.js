@@ -1,13 +1,18 @@
 
 import { FacebookIcon, InstagramIcon, LinkedinIcon, GitHubIcon } from "../../components/SocilaMedia"
-
+                                                     
 import './about.css';
+import '../../translate/i18n';
+import React from "react";
+import { useTranslation } from "react-i18next";
+
 
 function About() {
+  const { t, i18n } = useTranslation();
     return (    
-      <div className="holder-about">
+      <div className="holder-about" id="sobreMim">
         <div className="aboutme">
-            <h1>Sobre mim</h1>
+            <h1>{t('sobreMim')}</h1>
             <p>
             Tenho Interesse por tecnologias e linguagens para Internet desde cedo, pois meus pais são atuantes na área. Desde o início da minha carreira, em 2005, trabalhei com tecnologias para comunicação online.
             </p>

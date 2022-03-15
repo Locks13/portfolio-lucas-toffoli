@@ -27,7 +27,7 @@ function Knowledge() {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
         },
       },
@@ -35,7 +35,7 @@ function Knowledge() {
   };
 
   return (    
-    <div className="holder-knowledge">
+    <div className="holder-knowledge" id="conhecimento">
       <div className="knowledge">
           <h1>
             Conhecimentos

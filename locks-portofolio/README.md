@@ -82,3 +82,7 @@ yarn add react-toastify
 
 ### React Icons ####
 yarn add react-icons
+
+
+### Usando i18next para Traduzir o site ###
+react-i18next i18next-http-backend i18next-browser-languagedetector
