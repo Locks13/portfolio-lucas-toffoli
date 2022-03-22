@@ -1,0 +1,94 @@
+{
+    "sobreMim":{
+        "title": "About me",
+        "paragrafo-1": "I have been interested in Internet technologies and languages ​​from an early age, as my parents are active in the area. Since the beginning of my career, in 2005, I have worked with technologies for online communication.",
+        "paragrafo-2": "In my work, I focus on the use of new technologies/languages, with the objective of ensuring the best performance of the projects in which I participate. Whether looking for the best combination of clean code, best practices in tune with the company's pace, so that the project is easy to maintain, update and improve, by everyone on the team I'm part of, or even in projects that I work alone. , so that they can be easily understood by other colleagues who will take care of them in the future.",
+        "paragrafo-3": "I consider each new project a new challenge, and I also see my personal and/or technical growth in it.",
+        "paragrafo-4": "In my professional trajectory I have always valued teamwork, I consider sharing knowledge, the combination of qualities beneficial to the project, whether for the team members, or the people who will be affected by the project, whether customers or end user (example: E- Commerce).",
+        "paragrafo-5": "At this point in my career, I consider myself a critical developer in the projects I participate, I seek to identify their potentials, their eventual flaws, learning and creatively adding improvements for the development of a project."
+    },
+    "conhecimento":{
+        "title":"Knowledge",
+        "react":"",
+        "html":"",
+        "css":"",
+        "github":"",
+        "grenciamentoProjeto":"Project management",
+        "grenciamentoEquipe":"Team management"
+    },
+    "contato":{
+        "title":"Contact",
+        "telefone":"Telephone"
+    },
+    "depoimento":{
+        "title":"Testimony"
+    },
+    "curriculo":{
+        "title":"Curriculum Vitae",
+        "dadosPessoais":{
+            "title":"Personal data",
+            "nome":"Lucas Toffoli Malheiros",
+            "aniversario":"01/10/1986 – São Paulo/SP"
+        },
+        "formacaoAcademica":{
+            "title":"Academic education",
+            "item-1":"Colégio Equipe (August to December/2003)",
+            "item-2":"POLI preparatory course for the Vestibular (registered to apply for a place in the Image and Sound Course)",
+            "item-3":"Pontifical Catholic University of São Paulo - PUC/SP 2006 - Communication in Multimedia (not completed)",
+            "item-4":"National Trade Support Service - SENAC/Santo Amaro-SP 2010 - Multimedia Production Technology (not completed)"
+        },
+        "intercambioCultural":{
+            "title":"Cultural exchange",
+            "item":"Knoxville, Georgia, USA (January to June 2003)"
+        },
+        "cursoLivre":{
+            "title":"Free course",
+            "item-1":"National Trade Support Service - SENAC/Santana Basic Course in Web Production (01/20 to 02/2004)"
+        },
+        "conhecimentoGerais":{
+            "title":"General Knowledge",
+            "subtitle-1":"Administrative",
+            "adminText-1":"Project management",
+            "adminText-2":"Team coordination",
+            "subtitle-2":"Web development",
+            "webItem-1":"HTML",
+            "webItem-2":"CSS",
+            "webItem-3":"Javasript",
+            "webItem-4":"Photoshop",
+            "subtitle-3":"Desenvolvimento",
+            "itItem-1":"React.js",
+            "itItem-2":"React Hooks",
+            "itItem-3":"Sublime",
+            "itItem-4":"Visual Code",
+            "itItem-5":"Knowledge of programming logics",
+            "itItem-6":"Knowledge in Javascript",
+            "itItem-7":"Knowledge in Jquery",
+            "itItem-8":"Knowledge in Json",
+            "itItem-9":"GitHub"
+        },
+        "idioma":{
+            "title":"Language",
+            "lingua":"English",
+            "conversa":"Reading and Conversation &ndash; fluent",
+            "escrita":"Writing - basics"
+        },
+        "atividadesProfissionais":{
+            "title":"Professional activities",
+            "profissionalItem-1":"Web developer at Makak Comunicação Ltd. (15/01/2022 currently) Provision of CSM Joomla programming services Production of webpages (HTML, PHP, JAVASCRIPT)",
+            "profissionalItem-2":"Web developer at Digipix (20/08/2013- 17/12/2021) Web pages (HTML, CSS, JAVASCRIPT and JQUERY).",
+            "profissionalItem-3":"Web coordinator at Digipix 20/08/2011- 20/08/2013) Production of web pages (HTML, CSS, JAVASCRIPT and JQUERY)",
+            "profissionalItem-4":"Web designer for Vinil Planejamento (11/15/2010 to 06/20/2011 - 8 months) Provision of content and web design services Production of web designer, creation in flash, layout of webpages (html and flash)",
+            "profissionalItem-5":"Web designer for QLOJA (02/10/2009 to 15/12/20109 - 3 months) Provision of Content and Design Services Production of webdesigner, creation in flash, layout of webpages (html and flash)",
+            "profissionalItem-6":"Internship at Studio 113 Editora Ltda. (4 years period) – Creation and finalization of flash animation; running website and web pages; electronic publishing of magazines, folders and bulletins for Unibanco."
+        },
+        "acaoSocial":{
+            "title":"Social actions",
+            "socialItem-1":"Investor partner of Makak Comunicação Ltda.",
+            "socialItem-2":"Volunteering at the Parish Social Center of São Geraldo das Perdizes (2000 to 2010)",
+            "socialSubItem-1":"Support analyst for the implementation of management and administrative systems, including adherence to computerization offered by public bodies, for the secretariat and for the board of the Entity",
+            "socialSubItem-2":"Support analyst for Coordinators in the use of administrative (Word and Excel) and educational (diverse) software",
+            "socialSubItem-3":"Logistical support for activities and events to collect donations",
+            "socialSubItem-4":"Support for pedagogical activities outside the Entity's headquarters"
+        }
+    }
+}

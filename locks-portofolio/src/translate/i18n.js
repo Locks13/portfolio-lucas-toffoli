@@ -1,28 +1,34 @@
 import i18n from 'i18next';
-import LanguageDetector from 'i18next-browser-languagedetector';
 import { initReactI18next } from 'react-i18next';
-import pt from './lenguage/pt.json'
-import en from './lenguage/en.json'
+import LanguageDetector from 'i18next-browser-languagedetector';
+import HttpApi from 'i18next-http-backend';
+import translationPt from './lenguage/pt/translation.json'
+import translationEn from './lenguage/en/translation.json'
+
+const resources = {
+  en: {
+    translation: translationEn
+  },
+  pt: {
+    translation: translationPt
+  }
+};
 
 i18n
   .use(LanguageDetector)
   .use(initReactI18next)
+  .use(HttpApi)
   .init({
-    fallbackLng: 'pt',
-    debug: true,
-    lng:"pt",
-    react: {
-      wait:false,
-      useSuspense: true,
-    },
+    resources,
     interpolation: {
-      escapeValue: false,
+      escapeValue: false, // not needed for react as it escapes by default
     },
-    resource: {
-      en: en,
-      pt: pt
+    fallbackLng: 'pt',
+    detection: {
+      order: ['cookie', 'localStorage', 'htmlTag'],
+      caches: ['cookie', 'localStorage'],
     },
+    react: { useSuspense: false },
   });
-
 
 export default i18n;

@@ -28,6 +28,11 @@ svg.icon{
     margin: 1vh auto;
     display: block;
 }
+.slick-prev:before,
+.slick-next:before{
+    color: #000;
+    font-size: 30px;
+}
 @media(max-width:980px){
     .knowledge .slick-next{
         right: 15px;

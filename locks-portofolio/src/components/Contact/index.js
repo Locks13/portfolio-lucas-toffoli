@@ -1,6 +1,8 @@
 import React, { useRef } from 'react';
 import { FacebookIcon, InstagramIcon, LinkedinIcon, GitHubIcon } from "../../components/SocilaMedia"
 import emailjs from '@emailjs/browser';
+import '../../translate/i18n';
+import { useTranslation } from "react-i18next";
 
 
 import './contact.css';
@@ -8,6 +10,8 @@ import './contact.css';
 
 function Contact() {
   const form = useRef();
+
+  const { t } = useTranslation();
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -22,14 +26,15 @@ function Contact() {
 
     return (    
       <div className="holder-contact" id="contact">
-        <h1>Contato</h1>
+        <div className='contact-email-phone'>
+          <h1>{t('contato.title')}</h1>
           
           <div className='flex'>
             <div className="contact">
               <div className='contact-infos'>
                 <span>
                   <h3>
-                    Telefone:
+                    {t('contato.telefone')}
                   </h3>
                   <p>
                     +55 (11) 98224-7422
@@ -61,7 +66,7 @@ function Contact() {
               <input type="submit" value="Send"/>
             </form>
           </div>
-          
+        </div>          
       </div>
     )
   }

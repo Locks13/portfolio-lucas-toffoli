@@ -1,4 +1,8 @@
 .holder-contact{
+    background-color: rgb(224, 224, 224);
+}
+
+.contact-email-phone{
     margin: 2vh auto;
     max-width: 900px;
     padding: 0 20px;
@@ -42,7 +46,8 @@
     padding: 10px;
     font-size: 15px;
     border: solid 1px #000;
-    background-color: #e0e0e0;
+    /* background-color: #e0e0e0; */
+    background-color: #fff;
     padding: 10px;
 }
 .holder-contact textarea{
@@ -50,7 +55,7 @@
     width: 100%;
     resize: none;
     padding: 10px;
-    background-color: #e0e0e0;
+    background-color: #fff;
 }
 .holder-contact label{
     display: block;

@@ -5,9 +5,12 @@ import {AiFillProject} from 'react-icons/ai';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import { useTranslation } from "react-i18next";
 import './knowledge.css';
 
+
 function Knowledge() {
+  const { t } = useTranslation();
 
   let settings = {
     infinite: false,
@@ -38,7 +41,7 @@ function Knowledge() {
     <div className="holder-knowledge" id="conhecimento">
       <div className="knowledge">
           <h1>
-            Conhecimentos
+          {t('conhecimento.title')}
           </h1>
           <Slider {...settings}>
             <span>
@@ -79,14 +82,14 @@ function Knowledge() {
             <span>
               <Circle percentage={65} colour={'#005200'}  />
               <p>
-                Gerenciamento de Projetos
+              {t('conhecimento.grenciamentoProjeto')}
               </p>
               <AiFillProject className="icon" />
             </span>
             <span>
               <Circle percentage={70} colour={'#580000'}  />
               <p>
-                Gerenciamento de Equipe
+              {t('conhecimento.grenciamentoEquipe')}
               </p>
               <RiTeamFill className="icon" />
             </span>
