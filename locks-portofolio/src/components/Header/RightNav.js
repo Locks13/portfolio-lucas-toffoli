@@ -10,6 +10,9 @@ import { AuthContext } from '../../contexts/auth';
 import Button from "../Button";
 import HashButton from "../HashButton";
 
+import '../../translate/i18n';
+import { useTranslation } from "react-i18next";
+
 const Ul = styled.ul`
   list-style: none;
   display: flex;
@@ -31,18 +34,20 @@ const Ul = styled.ul`
 
 const RightNav = ({ open }) => {
   const { signed, user, signOut } = useContext(AuthContext);
+
+  const { t } = useTranslation();
   
   return (
     
     <Ul open={open}>
         <li>
-            <HashButton link={'./lucas-toffoli/#sobreMim'} text={'Sobre mim'} color={'primary'} />
+            <HashButton link={'./lucas-toffoli/#sobreMim'} text={t('sobreMim.title')}color={'primary'} />
         </li>
         <li>
-            <HashButton link={'./lucas-toffoli/#conhecimento'} text={'Conhecimento'} color={'primary'} />
+            <HashButton link={'./lucas-toffoli/#conhecimento'} text={t('conhecimento.title')} color={'primary'} />
         </li>
         <li>
-            <HashButton link={'./lucas-toffoli/#depoimentos'} text={'Depoimento'} color={'primary'} />
+            <HashButton link={'./lucas-toffoli/#depoimentos'} text={t('depoimento.title')} color={'primary'} />
         </li>
         <li>
             <Button link={'/lucas-toffoli/cv'} text={'CV'} color={'primary'} />

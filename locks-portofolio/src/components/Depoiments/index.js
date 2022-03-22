@@ -5,12 +5,16 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './depoiments.css';
 import Slider from "react-slick";
+import '../../translate/i18n';
+import { useTranslation } from "react-i18next";
 
 
 import { AuthContext } from "../../contexts/auth";
 
 
 function Depoiments() {
+
+  const { t } = useTranslation();
 
   const [userDepoimento, setUserDepoimento] = useState([]);
 
@@ -73,7 +77,7 @@ function Depoiments() {
   return (
     <div className="holder-referral">
       <div className="referral" id="depoimentos" >
-        <h1>Depoimentos</h1>
+        <h1>{t('depoimento.title')}</h1>
         {userDepoimento.length === 0 ? (
           <div className="spinner-border" role="status">
             <span className="sr-only">Loading...</span>

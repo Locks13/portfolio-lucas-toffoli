@@ -5,19 +5,20 @@ import AuthProvider from './contexts/auth';
 import Routes from './routes';
 import { ToastContainer } from 'react-toastify';
 import './translate/i18n';
-import { Suspense } from 'react';
+import { I18nextProvider } from 'react-i18next';
+import i18n from './translate/i18n'
 
 function App() {
 
   return (
-    <Suspense fallback={<div>Loading ... </div>}>
+    <I18nextProvider i18n={i18n}>
       <AuthProvider>
         <BrowserRouter>
           <ToastContainer autoClose={3000} />
           <Routes/>
         </BrowserRouter>
       </AuthProvider>
-    </Suspense>
+    </I18nextProvider>
   );
 }
 

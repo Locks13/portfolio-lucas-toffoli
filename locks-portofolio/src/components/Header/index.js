@@ -3,12 +3,13 @@ import Imagem from "../../assets/eu.png"
 import BgHeader from "../../assets/bg-header.png"
 import './header.css'
 import Burger from "./Burger";
+import CountryFlags from "../CountryFlags";
 
 
 const HeaderContainer = styled.div`
     display:flex;
     background-image: url(${BgHeader});
-    background-repeat: no-repeat;
+    background-size: cover;
     @media(max-width:968px){
         background:linear-gradient(to right, #181c2e, #555974);
     }
@@ -38,7 +39,8 @@ function Header() {
                 <img src={Imagem} alt="Lucas Toffoli" />
             </div>
             <Burger />
-        </HeaderItens>          
+        </HeaderItens>
+        <CountryFlags />
       </HeaderContainer>
     )
   }

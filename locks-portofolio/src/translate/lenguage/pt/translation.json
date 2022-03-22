@@ -1,0 +1,93 @@
+{
+    "sobreMim":{
+        "title": "Sobre mim",
+        "paragrafo-1": "Tenho Interesse por tecnologias e linguagens para Internet desde cedo, pois meus pais são atuantes na área. Desde o início da minha carreira, em 2005, trabalhei com tecnologias para comunicação online.",
+        "paragrafo-2": "Em minha atuação, tenho foco no uso de novas tecnologias/linguagens, tendo por objetivo o zelo pelo melhor desempenho dos projetos nos quais participo. Seja buscando a melhor combinação de código limpo, boas práticas em sintonia com o ritmo da empresa, de modo que o projeto seja fácil de ser mantido, atualizado e melhorado, por todos da equipe da qual faço parte, ou mesmo em projetos que atue sozinho, para que estes possam ser facilmente entendidos por outros colegas que venham cuidar deles futuramente.",
+        "paragrafo-3": "Considero cada novo projeto um novo desafio, e vejo nele também o meu crescimento pessoal e ou técnico.",
+        "paragrafo-4": "Em minha trajetória profissional sempre valorizei o trabalho em equipe, considero o compartilhar conhecimentos, a combinação de qualidades benéficas ao projeto, seja para os integrantes da equipe, ou as pessoas que serão afetadas pelo projeto, sejam clientes ou usuário final (exemplo: E-Commerce).",
+        "paragrafo-5": "Neste ponto da minha carreira considero-me um desenvolvedor crítico nos projetos que participo, busco identificar seus potenciais, suas eventuais falhas, aprendendo e agregando com criatividade melhorias para o desenvolvimento de um projeto."
+    },
+    "conhecimento":{
+        "title":"Conhecimentos",
+        "react":"",
+        "html":"",
+        "css":"",
+        "github":"",
+        "grenciamentoProjeto":"Gerenciamento de Projetos",
+        "grenciamentoEquipe":"Gerenciamento de Equipe"
+    },
+    "contato":{
+        "title":"Contato",
+        "telefone":"Telefone"
+    },
+    "depoimento":{
+        "title":"Depoimento"
+    },
+    "curriculo":{
+        "title":"Currículum Vitae",
+        "dadosPessoais":{
+            "title":"Dados Pessoais",
+            "nome":"Lucas Toffoli Malheiros",
+            "aniversario":"10/01/1986 – São Paulo/SP"
+        },
+        "formacaoAcademica":{
+            "title":"Formação Acadêmica",
+            "item-1":"Colégio Equipe (agosto a dezembro/2003)",
+            "item-2":"Cursinho da POLI preparatório para o Vestibular (inscrito para concorrer à vaga no Curso de Imagem e Som)",
+            "item-3":"Pontifícia Universidade Católica São Paulo - PUC/SP 2006 - Comunicação em Multimeios (não concluído)",
+            "item-4":"Serviço Nacional de Apoio ao Comércio - SENAC/Santo Amaro-SP 2010 - Tecnologia em Produção Multimídia (não concluído)"
+        },
+        "intercambioCultural":{
+            "title":"Intercâmbio Cultural"
+        },
+        "cursoLivre":{
+            "title":"Curso Livre",
+            "item-1":"Serviço Nacional de Apoio ao Comércio - SENAC/Santana Curso Básico de Produção Web ( 01/20 a 02/2004)"
+        },
+        "conhecimentoGerais":{
+            "title":"Conhecimento Gerais",
+            "subtitle-1":"Administrativo",
+            "adminText-1":"Gestão de projetos",
+            "adminText-2":"Coordenação de equipe",
+            "subtitle-2":"Desenvolvimento Web",
+            "webItem-1":"HTML",
+            "webItem-2":"CSS",
+            "webItem-3":"Javasript",
+            "webItem-4":"Photoshop",
+            "subtitle-3":"Desenvolvimento",
+            "itItem-1":"React.js",
+            "itItem-2":"React Hooks",
+            "itItem-3":"Sublime",
+            "itItem-4":"Visual Code",
+            "itItem-5":"Conhecimento de lógicas de Programação",
+            "itItem-6":"Conhecimento em Javascript",
+            "itItem-7":"Conhecimento em Jquery",
+            "itItem-8":"Conhecimento em Json",
+            "itItem-9":"GitHub"
+        },
+        "idioma":{
+            "title":"Idioma",
+            "lingua":"Inglês",
+            "conversa":"Leitura e conversação &ndash; fluente",
+            "escrita":"Redação – básico"
+        },
+        "atividadesProfissionais":{
+            "title":"Atividades Profissionais",
+            "profissionalItem-1":"Desenvolvedor web na Makak Comunicação Ltda. (15/01/2022 atualmente) Prestação de Serviços de programação de CSM Joomla Produção de webpages (HTML, PHP, JAVASCRIPT)",
+            "profissionalItem-2":"Desenvolvedor web na Digipix (20/08/2013- 17/12/2021) Web pages (HTML, CSS, JAVASCRIPT e JQUERY).",
+            "profissionalItem-3":"Coordenado de web na Digipix 20/08/2011- 20/08/2013) Produção de web pages (HTML, CSS, JAVASCRIPT e JQUERY)",
+            "profissionalItem-4":"Web designer para a Vinil Planejamento (15/11/2010 a 20/06/2011 - 8 meses) Prestação de Serviços de conteúdo e web design Produção de webdesigner, criação em flash, layout de webpages (html e flash)",
+            "profissionalItem-5":"Web designer para a QLOJA (02/10/2009 a 15/12/20109 - 3 meses) Prestação de Serviços de conteúdo e design Produção de webdesigner, criação em flash, layout de webpages (html e flash)",
+            "profissionalItem-6":"Estágio na Studio 113 Editora Ltda. (período de 4 anos) – Criação e finalização de animação em flash; execução de website e páginas web; editoração eletrônica de revistas, folder e boletins para o Unibanco."
+        },
+        "acaoSocial":{
+            "title":"Ações Sociais",
+            "socialItem-1":"Sócio investidor da Makak Comunicação Ltda.",
+            "socialItem-2":"Voluntariado no Centro Social Paroquial de São Geraldo das Perdizes (2000 a 2010)",
+            "socialSubItem-1":"Analista de suporte para a implantação de sistemas gerenciais e administrativos, incluindo adesão a informatização oferecida pelos orgãos públicos, para a secretaria e para a diretoria da Entidade",
+            "socialSubItem-2":"Analista de suporte para as Coordenadoras no uso de softwares administrativos (Word e Excel) e educativos (diversos)",
+            "socialSubItem-3":"Apoio logístico às atividades e aos eventos para arrecadação de doações",
+            "socialSubItem-4":"Apoio às atividades pedagógicas externas à sede da Entidade"
+        }
+    }
+}

@@ -1,0 +1,10 @@
+.holder-Footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:linear-gradient(to top, #181c2e, #555974);
+    padding: 10px;
+}
+.holder-Footer svg{
+    color: #fff;
+}

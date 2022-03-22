@@ -3,6 +3,7 @@
   margin: 2vh auto;
   display: flex;
   flex-direction: column;
+  padding-bottom: 30px;
 }
 .holder-cv div{
   margin: 10px 0;

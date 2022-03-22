@@ -1,5 +1,4 @@
 .holder-referral{
-    background-color: rgb(224, 224, 224);
 }
 .referral{
     margin: 2vh auto;
@@ -46,6 +45,10 @@
 .depoiment{
     margin: 20px 0;
     text-align: justify;
+}
+.slick-prev:before,
+.slick-next:before{
+    color: #000;
 }
 @media(max-width:980px){
     .referral .slick-next{
