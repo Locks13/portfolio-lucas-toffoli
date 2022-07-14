@@ -53,9 +53,11 @@ function SignIn() {
             <h3>
             {t('curriculo.intercambioCultural.title')}
             </h3>
-            <li>
-            {t('curriculo.intercambioCultural.item')}
-            </li>
+            <ul>
+              <li>
+              {t('curriculo.intercambioCultural.item')}
+              </li>
+            </ul>
           </div>
 
           <div>
